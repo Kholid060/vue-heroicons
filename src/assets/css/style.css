@@ -1,0 +1,46 @@
+.transition{
+  transition: all .1s ease;
+}
+#app {
+  min-height: 100vh;
+}
+
+body, pre{
+  font-family: 'Roboto', sans-serif !important;
+  scroll-behavior: smooth;
+}
+.header{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  height: 60%;
+}
+.title{
+  text-shadow: 4px 3px #3182ce;
+}
+.search-input input:focus > .search-input{
+  border: none !important;
+}
+
+.icon-container {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-bottom: 2px solid #e2e8f0;
+  box-shadow: 0 2px 1px #e2e8f0;
+}
+.icon-container:hover {
+  border-bottom: 2px solid #ebebeb;
+  transition: all 0.1s ease;
+}
+.icon-container.active {
+  transform: translateY(4px);
+  border-bottom-width: 2px;
+  box-shadow: none;
+}
+
+.github-btn{
+  background-color: #24292e
+}
