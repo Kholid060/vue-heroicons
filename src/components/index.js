@@ -1,4 +1,4 @@
-import HeroIcon from './HeroIcon';
+import HeroIcon from './HeroIcon.vue';
 
 export default {
   install(Vue) {

@@ -25,7 +25,8 @@ export default {
   },
   lib: [],
   add(icons) {
-    Array.isArray(icons) ? this.lib = icons : this.lib.push(icons);
+    if (Array.isArray(icons)) this.lib = icons;
+    else this.lib.push(icons);
   },
   computed: {
     icon() {
@@ -34,7 +35,9 @@ export default {
       if (findIcon) {
         return findIcon.path;
       }
+      /* eslint-disable no-console */
       console.error(`Can't find ${this.name}`);
+      /* eslint-enable no-console */
       return undefined;
     },
   },

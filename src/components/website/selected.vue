@@ -1,5 +1,6 @@
 <template>
-  <div class="mt-6 fixed right-0 bottom-0 mb-8 mr-4 flex flex-col items-center lg:w-4/12 sm:w-full md:w-full">
+  <div
+  class="mt-6 fixed right-0 bottom-0 mb-8 mr-4 flex flex-col items-center lg:w-4/12 sm:w-full md:w-full">
     <transition name="grow">
       <div class="bg-white border px-4 py-3 mb-3 shadow-xl rounded" v-if="showUsage">
         <div class="flex justify-between items-center">
@@ -13,7 +14,7 @@
       </div>
     </transition>
     <div
-    class="bg-white border rounded-full text-base flex items-center shadow-xl p-2 cursor-pointer transition usage-button"
+    class="bg-white border rounded-full text-base flex items-center shadow-xl p-2 cursor-pointer transition"
     @click="showUsage = !showUsage">
       <hero-icon name="x" v-if="showUsage"></hero-icon>
       <span class="text-blue-400 mx-2 font-medium" v-else>{{selected.length}}</span>

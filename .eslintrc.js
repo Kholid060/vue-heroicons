@@ -12,6 +12,9 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'import/no-named-as-default': 0,
+    'max-len': [2, { code: 140, tabWidth: 2, ignoreUrls: true }],
+    'import/no-extraneous-dependencies': ['error', { devDependencies: ['**/*.test.js', '**/*.config.js', '**/*.spec.js'] }],
   },
 
   parserOptions: {
