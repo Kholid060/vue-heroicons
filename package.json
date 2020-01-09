@@ -7,7 +7,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name vue-heroicons ./src/components/index.js",
-    "build:docs": "vue-cli-service build --dest docs",
+    "build:docs": "vue-cli-service build --mode production --dest docs",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint"
   },
