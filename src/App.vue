@@ -4,7 +4,7 @@
       <a
       href="https://github.com/Kholid060/vue-heroicons"
       target="_blank"
-      class="flex items-center absolute right-0 mt-4 rounded px-3 py-2 mr-6">
+      class="flex items-center absolute right-0 mt-4 rounded px-3 py-2 mr-6 github-btn">
         <img :src="require('./assets/github.png')" class="w-6">
         <p class="text-white font-medium ml-3">Github</p>
       </a>
@@ -27,12 +27,12 @@
            :class="[icon.selected ? 'text-blue-600 active' : 'text-gray-700']"
            @click="icons[icon.index].selected = !icons[icon.index].selected">
             <heroicon :name="icon.name" class="fill-current" height="25" width="25"></heroicon>
-            <p class="font-medium mt-2 text-xs overflow-hidden truncate">{{icon.name}}</p>
+            <p class="font-medium mt-4 text-xs overflow-hidden truncate">{{icon.name}}</p>
           </div>
         </div>
       </div>
     </div>
-    <selected :selected="selectedIcons"></selected>
+    <selected :selected="selectedIcons" v-show="selectedIcons.length !== 0"></selected>
   </div>
 </template>
 <script>

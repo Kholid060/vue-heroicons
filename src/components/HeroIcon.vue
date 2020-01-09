@@ -1,5 +1,11 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" @click="$emit('click')" :class="['heroicon-ui', name]" :width="width" :fill="fill" :height="height" v-html="icon">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24" @click="$emit('click')"
+    :class="['heroicon-ui', name]"
+    :width="width"
+    :fill="fill" :height="height"
+    v-html="icon">
   </svg>
 </template>
 <script>
@@ -25,8 +31,11 @@ export default {
   },
   lib: [],
   add(icons) {
-    if (Array.isArray(icons)) this.lib = icons;
-    else this.lib.push(icons);
+    if (Array.isArray(icons)) {
+      this.lib = icons;
+    } else {
+      this.lib.push(icons);
+    }
   },
   computed: {
     icon() {
