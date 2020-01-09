@@ -9,7 +9,7 @@
       @blur="inputFocus = false"
       v-model="emitData"
       class="bg-transparent flex-grow focus:outline-none text-gray-700">
-    <hero-icon name="search" class="fill-current text-gray-600"></hero-icon>
+    <heroicon name="search" class="fill-current text-gray-600"></heroicon>
   </div>
 </template>
 <script>
