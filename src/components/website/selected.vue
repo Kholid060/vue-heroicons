@@ -16,7 +16,7 @@
     <div
     class="bg-white border rounded-full text-base flex items-center shadow-xl p-2 cursor-pointer transition"
     @click="showUsage = !showUsage">
-      <hero-icon name="x" v-if="showUsage"></hero-icon>
+      <heroicon name="x" v-if="showUsage"></heroicon>
       <span class="text-blue-400 mx-2 font-medium" v-else>{{selected.length}}</span>
       <div class="inline-block bg-gray-200 h-full mx-2" style="width: 2px; height: 25px;"></div>
       <span class="mr-2">{{showUsage ? 'Close' : 'Selected'}}</span>

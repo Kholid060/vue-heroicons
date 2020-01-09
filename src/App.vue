@@ -26,7 +26,7 @@
            class="bg-white relative h-full rounded py-4 icon-container px-2 text-center cursor-pointer"
            :class="[icon.selected ? 'text-blue-600 active' : 'text-gray-700']"
            @click="icons[icon.index].selected = !icons[icon.index].selected">
-            <hero-icon :name="icon.name" class="fill-current" height="25" width="25"></hero-icon>
+            <heroicon :name="icon.name" class="fill-current" height="25" width="25"></heroicon>
             <p class="font-medium mt-2 text-xs overflow-hidden truncate">{{icon.name}}</p>
           </div>
         </div>
