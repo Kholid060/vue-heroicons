@@ -1,24 +1,43 @@
+![version](https://img.shields.io/npm/v/vue-heroicons) ![license](https://img.shields.io/npm/l/vue-heroicons) ![downloads](https://img.shields.io/npm/dw/vue-heroicons)
+
 # vue-heroicons
+![alt text](https://i.imgur.com/rYcDbvE.png)
+Free 104 premium [heroicons-ui](https://github.com/sschoger/heroicons-ui) SVG icons for your Vue.js project
 
-## Project setup
+## Installation
 ```
-yarn install
-```
+// NPM
+npm i vue-heroicons
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
+// Yarn
+yarn add vue-heroicons
 ```
 
-### Lints and fixes files
+## Usage
+main.js
+```js
+import Vue from 'vue'
+import HeroIcon from 'vue-heroicons'
+import { archive, arrowDown } from 'vue-heroicons/src/icons'
+
+HeroIcon.add(archive, arrowDown)
+Vue.use(HeroIcon)
 ```
-yarn lint
+app.vue
+```html
+<template>
+    <div id="app">
+        <heroicon name="archive"></heroicon>
+        <heroicon name="arrow-down" fill="green"></heroicon>
+    </div>
+</template>
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Props
+
+|  Name | Description  |  Type | Accepted values |
+|---|---|---| --- |
+|`name`  | Icon name  | `String`  | - |
+|  `height` | Height of icon  | `String` | - |
+| `width` | Width of icon | `String` | - |
+| `fill` | Color of icon | `String` | HEX or color name |
