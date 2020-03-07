@@ -23,7 +23,7 @@ import Vue from 'vue'
 import HeroIcon from 'vue-heroicons'
 import { archive, arrowDown } from 'vue-heroicons/src/icons'
 
-HeroIcon.add(archive, arrowDown)
+HeroIcon.add([archive, arrowDown])
 Vue.use(HeroIcon)
 ```
 app.vue
@@ -32,6 +32,30 @@ app.vue
     <div id="app">
         <heroicon name="archive"></heroicon>
         <heroicon name="arrow-down" fill="green"></heroicon>
+    </div>
+</template>
+```
+
+## Add custom icon
+my-custom-icons.js
+```js
+export const customIcon = { name: 'custom-icon', path: '<path d="M13 5.41V21a1 1 0 0 1-2 0V5.41l-5.3 5.3a1 1 0 1 1-1.4-1.42l7-7a1 1 0 0 1 1.4 0l7 7a1 1 0 1 1-1.4 1.42L13 5.4z"/>' }
+```
+main.js
+```js
+import Vue from 'vue'
+import HeroIcon from 'vue-heroicons'
+import { archive, arrowDown } from 'vue-heroicons/src/icons'
+import { customIcon } from './my-custom-icons'
+
+HeroIcon.add([archive, arrowDown, customIcon])
+Vue.use(HeroIcon)
+```
+app.vue
+```html
+<template>
+    <div id="app">
+        <heroicon name="custom-icon"></heroicon>
     </div>
 </template>
 ```

@@ -27,7 +27,7 @@
            :class="[icon.selected ? 'text-blue-600 active' : 'text-gray-700']"
            @click="icons[icon.index].selected = !icons[icon.index].selected">
             <heroicon :name="icon.name" class="fill-current" height="25" width="25"></heroicon>
-            <p class="font-medium mt-4 text-xs overflow-hidden truncate">{{icon.name}}</p>
+            <p class="font-medium mt-3 text-xs overflow-hidden truncate">{{icon.name}}</p>
           </div>
         </div>
       </div>
