@@ -1,6 +1,7 @@
 ![version](https://img.shields.io/npm/v/vue-heroicons) ![license](https://img.shields.io/npm/l/vue-heroicons) ![downloads](https://img.shields.io/npm/dw/vue-heroicons)
 
-# vue-heroicons
+# vue-heroicons [deprecated]
+You can use [vue-hero-icons](https://github.com/matschik/vue-hero-icons) instead.
 ![alt text](https://raw.githubusercontent.com/Kholid060/vue-heroicons/master/src/assets/Screenshot.png)
 Free 104 premium [heroicons-ui](https://github.com/sschoger/heroicons-ui) SVG icons for your Vue.js project
 
